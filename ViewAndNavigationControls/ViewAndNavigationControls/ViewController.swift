@@ -12,15 +12,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var myImage: UIImageView!
     @IBOutlet weak var myFakeView: UIView!
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
    
     @IBAction func myButtonAction(_ sender: Any) {
-        myFakeView.isHidden = true
+        myFakeView.isHidden = !myFakeView.isHidden
     }
 }
     
