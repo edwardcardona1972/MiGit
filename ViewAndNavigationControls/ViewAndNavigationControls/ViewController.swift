@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     }
    
     @IBAction func myButtonAction(_ sender: Any) {
-        myFakeView.isHidden = !myFakeView.isHidden
+        myView.isHidden = !myView.isHidden
     }
 }
     
