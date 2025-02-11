@@ -8,9 +8,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet weak var myView: UIView!
+    @IBOutlet weak var myview: UIView!
     @IBOutlet weak var myImage: UIImageView!
-    @IBOutlet weak var myFakeView: UIView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     }
    
     @IBAction func myButtonAction(_ sender: Any) {
-        myFakeView.isHidden = true
+        myview.isHidden = true 
     }
+    
+    
 }
