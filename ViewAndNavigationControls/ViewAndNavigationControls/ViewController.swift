@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var myview: UIView!
     @IBOutlet weak var myImage: UIImageView!
+    @IBOutlet weak var myFakeView: UIView!
     
     
     override func viewDidLoad() {
@@ -18,7 +19,7 @@ class ViewController: UIViewController {
     }
    
     @IBAction func myButtonAction(_ sender: Any) {
-        myview.isHidden = true 
+        myFakeView.isHidden = true
     }
     
     

@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xIF-OO-eQr">
-                                <rect key="frame" x="0.0" y="100" width="414" height="405"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xIF-OO-eQr">
+                                <rect key="frame" x="0.0" y="120" width="414" height="405"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7dP-gg-omt">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
@@ -63,26 +63,32 @@
                                     </imageView>
                                 </subviews>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Frz-pf-FoN">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Frz-pf-FoN">
+                                <rect key="frame" x="0.0" y="20" width="414" height="100"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="h72-Bh-Lwf"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="vHv-4Z-OsZ"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="E19-jZ-HnG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Frz-pf-FoN" firstAttribute="top" secondItem="RSw-M2-cah" secondAttribute="top" id="8su-8D-dFE"/>
+                            <constraint firstItem="Frz-pf-FoN" firstAttribute="trailing" secondItem="E19-jZ-HnG" secondAttribute="trailing" id="HT0-Xj-gHd"/>
+                            <constraint firstItem="Frz-pf-FoN" firstAttribute="trailing" secondItem="E19-jZ-HnG" secondAttribute="trailing" id="L5d-HZ-Skl"/>
+                            <constraint firstItem="Frz-pf-FoN" firstAttribute="leading" secondItem="E19-jZ-HnG" secondAttribute="leading" id="OBF-cr-rHf"/>
+                            <constraint firstItem="Frz-pf-FoN" firstAttribute="leading" secondItem="E19-jZ-HnG" secondAttribute="leading" id="OeN-5J-mRJ"/>
                             <constraint firstItem="xIF-OO-eQr" firstAttribute="leading" secondItem="E19-jZ-HnG" secondAttribute="leading" id="PmG-fd-yOn"/>
-                            <constraint firstItem="xIF-OO-eQr" firstAttribute="top" secondItem="Frz-pf-FoN" secondAttribute="bottom" id="Q5U-H1-br4"/>
+                            <constraint firstItem="Frz-pf-FoN" firstAttribute="leading" secondItem="E19-jZ-HnG" secondAttribute="leading" id="Sla-qS-ehe"/>
                             <constraint firstItem="E19-jZ-HnG" firstAttribute="trailing" secondItem="Frz-pf-FoN" secondAttribute="trailing" id="U2y-Mg-xU4"/>
                             <constraint firstItem="Frz-pf-FoN" firstAttribute="leading" secondItem="E19-jZ-HnG" secondAttribute="leading" id="U6T-NX-a58"/>
+                            <constraint firstItem="xIF-OO-eQr" firstAttribute="top" secondItem="Frz-pf-FoN" secondAttribute="bottom" id="VU2-Gz-s2e"/>
+                            <constraint firstItem="Frz-pf-FoN" firstAttribute="top" secondItem="RSw-M2-cah" secondAttribute="top" id="g50-cy-JWw"/>
                             <constraint firstAttribute="trailing" secondItem="xIF-OO-eQr" secondAttribute="trailing" id="k3C-JB-Uoz"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="myFakeView" destination="Frz-pf-FoN" id="63s-5e-vNT"/>
                         <outlet property="myImage" destination="FHD-P1-teK" id="hFb-8R-RDy"/>
                         <outlet property="myview" destination="7dP-gg-omt" id="gNX-x7-1N9"/>
                     </connections>
