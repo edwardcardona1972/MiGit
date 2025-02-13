@@ -18,10 +18,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       
+        myWebView.load(URLRequest(url: URL(string: "https://www.google.es")!))
         
-        myWebView.load(URLRequest(url: URL(string: "https://www.google.com")!))
         
-        myMap.centerCoordinate = CLLocationCoordinate2D(latitude: 5.7319444444444, longitude: -75.141944444444)
         
     }
    
