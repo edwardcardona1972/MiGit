@@ -15,8 +15,8 @@ class PageViewController: UIPageViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let myGreenVC = UIStoryboard(name: "main", bundle: nil).instantiateViewController(withIdentifier: "vcGreen")
-        let myGrayVC = UIStoryboard(name: "main", bundle: nil).instantiateViewController(withIdentifier: "vcGray")
+        let myGreenVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "vcGreen")
+        let myGrayVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "vcGray")
         
         myControllers.append(myGreenVC)
         myControllers.append(myGrayVC)

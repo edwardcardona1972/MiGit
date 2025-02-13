@@ -21,7 +21,7 @@ class ViewController: UIViewController {
        
         myWebView.load(URLRequest(url: URL(string: "https://www.google.com")!))
         
-        myMap.centerCoordinate = CLLocationCoordinate2D(latitude: 5.7319444444444, longitude: -75.141944444444)
+        myMap.centerCoordinate = CLLocationCoordinate2D(latitude: 19.4326, longitude: -99.1332)
         
     }
    

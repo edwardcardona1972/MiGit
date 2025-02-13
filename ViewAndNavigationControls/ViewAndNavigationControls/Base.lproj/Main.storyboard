@@ -165,14 +165,36 @@
         <!--Item 1-->
         <scene sceneID="Okv-vF-UCK">
             <objects>
-                <viewController storyboardIdentifier="vcGreen" id="v83-90-2IP" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="vcGreen" id="v83-90-2IP" customClass="GreenViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RNV-Pz-6z0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" text="Plain" placeholder="Buscando" translatesAutoresizingMaskIntoConstraints="NO" id="9yP-pd-fmx">
+                                <rect key="frame" x="0.0" y="48" width="414" height="800"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="v83-90-2IP" id="Nht-l5-GE5"/>
+                                </connections>
+                            </searchBar>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="18f-SB-3Ax"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="9yP-pd-fmx" firstAttribute="centerY" secondItem="RNV-Pz-6z0" secondAttribute="centerY" id="GrW-Uf-yuo"/>
+                            <constraint firstItem="9yP-pd-fmx" firstAttribute="centerX" secondItem="RNV-Pz-6z0" secondAttribute="centerX" id="NNR-LU-KSh"/>
+                            <constraint firstItem="9yP-pd-fmx" firstAttribute="centerY" secondItem="RNV-Pz-6z0" secondAttribute="centerY" id="TUC-WP-j2k"/>
+                            <constraint firstItem="9yP-pd-fmx" firstAttribute="top" secondItem="18f-SB-3Ax" secondAttribute="top" id="bgi-PD-ZAJ"/>
+                            <constraint firstItem="9yP-pd-fmx" firstAttribute="centerX" secondItem="RNV-Pz-6z0" secondAttribute="centerX" id="eK1-le-Eod"/>
+                            <constraint firstItem="9yP-pd-fmx" firstAttribute="trailing" secondItem="18f-SB-3Ax" secondAttribute="trailing" id="h7t-xE-Lpv"/>
+                            <constraint firstItem="9yP-pd-fmx" firstAttribute="leading" secondItem="18f-SB-3Ax" secondAttribute="leading" id="yw3-c5-XEc"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="bD2-lC-2JN"/>
+                    <connections>
+                        <outlet property="myLabel" destination="9yP-pd-fmx" id="PcP-0V-Nc4"/>
+                        <outlet property="mySearchBar" destination="9yP-pd-fmx" id="Q6S-w1-A2Z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0pQ-Tl-sgj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
