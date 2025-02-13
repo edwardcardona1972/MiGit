@@ -165,40 +165,44 @@
         <!--Item 1-->
         <scene sceneID="Okv-vF-UCK">
             <objects>
-                <viewController storyboardIdentifier="vcGreen" id="v83-90-2IP" customClass="GreenViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="vcGreen" keyboardType="off" id="v83-90-2IP" customClass="GreenViewController" customModule="ViewAndNavigationControls" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RNV-Pz-6z0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" text="Plain" placeholder="Buscando" translatesAutoresizingMaskIntoConstraints="NO" id="9yP-pd-fmx">
-                                <rect key="frame" x="0.0" y="48" width="414" height="800"/>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="9yP-pd-fmx">
+                                <rect key="frame" x="0.0" y="48" width="414" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="v83-90-2IP" id="Nht-l5-GE5"/>
                                 </connections>
                             </searchBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Buscando" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f88-4n-not">
+                                <rect key="frame" x="169" y="437.5" width="76" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="18f-SB-3Ax"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <constraints>
-                            <constraint firstItem="9yP-pd-fmx" firstAttribute="centerY" secondItem="RNV-Pz-6z0" secondAttribute="centerY" id="GrW-Uf-yuo"/>
-                            <constraint firstItem="9yP-pd-fmx" firstAttribute="centerX" secondItem="RNV-Pz-6z0" secondAttribute="centerX" id="NNR-LU-KSh"/>
-                            <constraint firstItem="9yP-pd-fmx" firstAttribute="centerY" secondItem="RNV-Pz-6z0" secondAttribute="centerY" id="TUC-WP-j2k"/>
-                            <constraint firstItem="9yP-pd-fmx" firstAttribute="top" secondItem="18f-SB-3Ax" secondAttribute="top" id="bgi-PD-ZAJ"/>
-                            <constraint firstItem="9yP-pd-fmx" firstAttribute="centerX" secondItem="RNV-Pz-6z0" secondAttribute="centerX" id="eK1-le-Eod"/>
-                            <constraint firstItem="9yP-pd-fmx" firstAttribute="trailing" secondItem="18f-SB-3Ax" secondAttribute="trailing" id="h7t-xE-Lpv"/>
-                            <constraint firstItem="9yP-pd-fmx" firstAttribute="leading" secondItem="18f-SB-3Ax" secondAttribute="leading" id="yw3-c5-XEc"/>
+                            <constraint firstItem="f88-4n-not" firstAttribute="centerX" secondItem="RNV-Pz-6z0" secondAttribute="centerX" id="1Xy-LW-97t"/>
+                            <constraint firstItem="f88-4n-not" firstAttribute="centerY" secondItem="RNV-Pz-6z0" secondAttribute="centerY" id="6TC-Kj-qJW"/>
+                            <constraint firstItem="9yP-pd-fmx" firstAttribute="leading" secondItem="18f-SB-3Ax" secondAttribute="leading" id="WIm-ch-Q0g"/>
+                            <constraint firstItem="9yP-pd-fmx" firstAttribute="top" secondItem="18f-SB-3Ax" secondAttribute="top" id="hTW-t7-ego"/>
+                            <constraint firstItem="9yP-pd-fmx" firstAttribute="trailing" secondItem="18f-SB-3Ax" secondAttribute="trailing" id="kts-FW-uRv"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="bD2-lC-2JN"/>
                     <connections>
-                        <outlet property="myLabel" destination="9yP-pd-fmx" id="PcP-0V-Nc4"/>
+                        <outlet property="myLabel" destination="f88-4n-not" id="VhI-r4-9Nw"/>
                         <outlet property="mySearchBar" destination="9yP-pd-fmx" id="Q6S-w1-A2Z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0pQ-Tl-sgj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1261" y="-638"/>
+            <point key="canvasLocation" x="1159" y="-717"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Chp-BB-eF9">
