@@ -15,15 +15,22 @@ class PageViewController: UIPageViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let myGreenVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "vcGreen")
-        let myGrayVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "vcGray")
+        let listaContenedores = ["vcGreen", "vcGray"]
         
-        myControllers.append(myGreenVC)
-        myControllers.append(myGrayVC)
-        
-        setViewControllers([myGreenVC],direction: .forward,animated: true,completion: nil  )
+        listaContenedores.forEach { (contenedorName) in
+            let contenedor = instantiateViewController(withIdentifier: contenedorName)
+            
+            myControllers.append(contenedor)
+            
+            setViewControllers(contenedorName == "vcGreen" ? [contenedor] : [contenedor], direction: .forward,animated: true,completion: nil  )
+        }
         
         dataSource = self
+    }
+    
+    func instantiateViewController(withIdentifier identifier: String, fromStoryboard storyboardName: String = "Main") -> UIViewController {
+        let storyboard = UIStoryboard(name: storyboardName, bundle: nil)
+        return storyboard.instantiateViewController(withIdentifier: identifier)
     }
     
 
