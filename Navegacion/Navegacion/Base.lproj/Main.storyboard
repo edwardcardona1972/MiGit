@@ -11,66 +11,65 @@
         <!--Menu-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Navegacion" customModuleProvider="target" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Navegacion" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m6C-Wf-X64">
-                                <rect key="frame" x="141" y="424" width="93" height="53"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLE-vq-FDR">
+                                <rect key="frame" x="172" y="201" width="71" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Rosa">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="32"/>
-                                    <color key="baseForegroundColor" systemColor="tableBackgroundColor"/>
-                                </buttonConfiguration>
+                                <buttonConfiguration key="configuration" style="plain" title="Negro"/>
                                 <connections>
-                                    <segue destination="aga-Py-dg5" kind="show" id="vb7-CZ-At7"/>
+                                    <segue destination="EXj-lC-DKX" kind="show" id="8KS-9i-ZtX"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vdk-Yb-Twd">
-                                <rect key="frame" x="133" y="250" width="109" height="53"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O8b-bi-Ncl">
+                                <rect key="frame" x="175" y="431" width="62" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Negro">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="32"/>
-                                    <color key="baseForegroundColor" systemColor="tableBackgroundColor"/>
-                                </buttonConfiguration>
+                                <buttonConfiguration key="configuration" style="plain" title="Rosa"/>
                                 <connections>
-                                    <segue destination="EXj-lC-DKX" kind="show" id="JD3-ri-Gi3"/>
+                                    <segue destination="aga-Py-dg5" kind="show" id="Wrl-do-Ia5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ms-1k-GGR">
-                                <rect key="frame" x="135" y="578" width="104" height="53"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xeD-jG-OQv">
+                                <rect key="frame" x="165" y="657" width="69" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Verde">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="32"/>
-                                    <color key="baseForegroundColor" systemColor="tableBackgroundColor"/>
-                                </buttonConfiguration>
+                                <buttonConfiguration key="configuration" style="plain" title="Verde"/>
                                 <connections>
-                                    <segue destination="DGj-ht-lTx" kind="show" id="zLo-Zx-oTl"/>
+                                    <segue destination="DGj-ht-lTx" kind="show" id="dJf-sY-8LD"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" button="YES"/>
+                            <bool key="isElement" value="YES"/>
+                        </accessibility>
                     </view>
-                    <navigationItem key="navigationItem" title="Menu" leftItemsSupplementBackButton="YES" id="icY-f1-6bX"/>
+                    <navigationItem key="navigationItem" title="Menu" leftItemsSupplementBackButton="YES" id="icY-f1-6bX" colorLabel="IBBuiltInLabel-Yellow"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-844" y="282"/>
+            <point key="canvasLocation" x="-844.92753623188412" y="281.91964285714283"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="r45-LN-9t4">
             <objects>
                 <viewController id="EXj-lC-DKX" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="VTs-hC-rsh">
+                    <view key="view" userInteractionEnabled="NO" contentMode="scaleToFill" id="VTs-hC-rsh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="hNe-bC-fib"/>
                         <color key="backgroundColor" systemColor="viewFlipsideBackgroundColor"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" button="YES"/>
+                            <bool key="isElement" value="YES"/>
+                        </accessibility>
                     </view>
                     <navigationItem key="navigationItem" id="qsp-EB-kCY"/>
                 </viewController>
@@ -82,13 +81,17 @@
         <scene sceneID="aoK-Qy-fUD">
             <objects>
                 <viewController id="aga-Py-dg5" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Rga-2r-VU6">
+                    <view key="view" userInteractionEnabled="NO" contentMode="scaleToFill" id="Rga-2r-VU6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="37o-nF-5QE"/>
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" button="YES"/>
+                            <bool key="isElement" value="YES"/>
+                        </accessibility>
                     </view>
-                    <navigationItem key="navigationItem" id="ImG-zb-SpN"/>
+                    <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="ImG-zb-SpN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gbT-Ki-PE7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -98,13 +101,17 @@
         <scene sceneID="i5N-Oq-QzR">
             <objects>
                 <viewController id="DGj-ht-lTx" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Xy1-HB-8Kz">
+                    <view key="view" userInteractionEnabled="NO" contentMode="scaleToFill" id="Xy1-HB-8Kz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="lg6-EQ-vbN"/>
                         <color key="backgroundColor" systemColor="systemMintColor"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" button="YES"/>
+                            <bool key="isElement" value="YES"/>
+                        </accessibility>
                     </view>
-                    <navigationItem key="navigationItem" id="pdB-RN-2cD"/>
+                    <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="pdB-RN-2cD"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CmS-SA-krE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -131,13 +138,13 @@
     </scenes>
     <resources>
         <systemColor name="systemMintColor">
-            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.78039215689999997" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemTealColor">
-            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.18823529410000001" green="0.69019607839999997" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tableBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
