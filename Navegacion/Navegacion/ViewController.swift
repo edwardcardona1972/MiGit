@@ -35,5 +35,33 @@ class ViewController: UIViewController {
         performSegue(withIdentifier: "VCVerde", sender: self)
         
     }
-    
-}
+    override func prepare(for segue:UIStoryboardSegue, sender: (Any)?){
+        
+        if segue.identifier == "VCNegro"{
+            
+            if let destino = segue.destination as? ViewControllerNegro{
+                
+                destino.titulo = "Negro"
+            }
+        }
+        if segue.identifier == "VCRosa"{
+            
+            if let destino = segue.destination as? ViewControllerRosa{
+                
+                destino.titulo = "Rosa"
+                
+                
+            }
+        }
+            if segue.identifier == "VCVerde"{
+                
+                if let destino = segue.destination as? ViewControllerVerde{
+                    
+                    destino.titulo = "Verde"
+                    
+                                     
+                }
+            }
+        }
+    }
+

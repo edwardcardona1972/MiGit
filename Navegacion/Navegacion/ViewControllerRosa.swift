@@ -9,10 +9,16 @@ import UIKit
 
 class ViewControllerRosa: UIViewController {
 
+    var titulo: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let tituloFinal = titulo{
+            self.title = tituloFinal
+        }
 
-        // Do any additional setup after loading the view.
+        
     }
     
 
