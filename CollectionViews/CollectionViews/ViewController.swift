@@ -11,13 +11,13 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var colletionView: UICollectionView!
     
-    private  lef myCountries = ["España", "Mexico", "Perú", "Colombia", "Argentina", "EEUU", "Francia", "Italia"]
+    private  let myCountries: [String] = ["España", "Mexico", "Perú", "Colombia", "Argentina", "EEUU", "Francia", "Italia"]
     override func viewDidLoad() {
         super.viewDidLoad()
         
         colletionView.dataSource = self
         
-        colletionView.register(UINib(nibName: "MyCustomColectionViewCell", bundle: nil ), forCellWithReuseIdentifier: "mycell")
+        colletionView.register(UINib(nibName: "MyCustomCollectionViewCell", bundle: nil ), forCellWithReuseIdentifier: "mycell")
     }
 
 }
@@ -35,9 +35,9 @@ extension ViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "mycell", for: indexPath) as?
-        MyCustomColectionViewCell
+            MyCustomCollectionViewCell
       
-        cell?.myFirstLabel.text = myCountries[indexPath.item]
+        cell!.myFirstLabel.text = myCountries[indexPath.row]
         return cell!
     }
 }
