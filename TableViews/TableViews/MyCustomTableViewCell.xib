@@ -17,7 +17,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="523" height="213"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ioQ-ze-Y66">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="265" translatesAutoresizingMaskIntoConstraints="NO" id="ioQ-ze-Y66">
                         <rect key="frame" x="16" y="53" width="275" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
@@ -29,7 +29,7 @@
                             <constraint firstAttribute="width" constant="200" id="jIt-C8-n22"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4s-yx-q5S">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4s-yx-q5S">
                         <rect key="frame" x="16" y="16" width="275" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
@@ -40,7 +40,7 @@
                     <constraint firstAttribute="bottom" secondItem="O9o-i0-Xkv" secondAttribute="bottom" constant="16" id="0C0-Xm-Nao"/>
                     <constraint firstItem="O9o-i0-Xkv" firstAttribute="leading" secondItem="o4s-yx-q5S" secondAttribute="trailing" constant="16" id="7pn-35-uwk"/>
                     <constraint firstAttribute="trailing" secondItem="O9o-i0-Xkv" secondAttribute="trailing" constant="16" id="8ml-Cf-riQ"/>
-                    <constraint firstAttribute="bottom" secondItem="ioQ-ze-Y66" secondAttribute="bottom" constant="16" id="E0V-4c-fK7"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ioQ-ze-Y66" secondAttribute="bottom" constant="16" id="E0V-4c-fK7"/>
                     <constraint firstItem="O9o-i0-Xkv" firstAttribute="leading" secondItem="o4s-yx-q5S" secondAttribute="trailing" constant="16" id="Gzh-cc-h5B"/>
                     <constraint firstItem="ioQ-ze-Y66" firstAttribute="top" secondItem="o4s-yx-q5S" secondAttribute="bottom" constant="16" id="W2p-bO-026"/>
                     <constraint firstItem="ioQ-ze-Y66" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Xce-ae-c6Z"/>
@@ -48,10 +48,7 @@
                     <constraint firstItem="O9o-i0-Xkv" firstAttribute="leading" secondItem="ioQ-ze-Y66" secondAttribute="trailing" constant="16" id="d8h-kn-i6D"/>
                     <constraint firstItem="o4s-yx-q5S" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="fPz-Ew-L9D"/>
                     <constraint firstItem="o4s-yx-q5S" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="hJf-Zo-n0P"/>
-                    <constraint firstItem="O9o-i0-Xkv" firstAttribute="leading" secondItem="ioQ-ze-Y66" secondAttribute="trailing" constant="16" id="hOB-vj-xRQ"/>
                     <constraint firstItem="O9o-i0-Xkv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="hdf-iB-UhB"/>
-                    <constraint firstItem="ioQ-ze-Y66" firstAttribute="top" secondItem="o4s-yx-q5S" secondAttribute="bottom" constant="16" id="vHW-n4-oMF"/>
-                    <constraint firstAttribute="bottom" secondItem="ioQ-ze-Y66" secondAttribute="bottom" constant="16" id="z2H-HH-eeM"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
