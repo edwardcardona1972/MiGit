@@ -8,19 +8,20 @@
 import UIKit
 
 class ViewControllerNegro: UIViewController {
-
+    
     var titulo : String?
-    
-    
+    var textoRecibir : String?
+    var backgroundColor : UIColor?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let tituloFinal = titulo{
-            self.title = tituloFinal
-        }
-        
-        
-    }
+        self.title = titulo!
+        self.backgroundColor = backgroundColor!
+        self.view.backgroundColor = backgroundColor
+       }
+    
+}
     
 
     /*
@@ -33,4 +34,4 @@ class ViewControllerNegro: UIViewController {
     }
     */
 
-}
+

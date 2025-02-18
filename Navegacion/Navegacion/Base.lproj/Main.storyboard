@@ -54,8 +54,6 @@
                     <navigationItem key="navigationItem" title="Menu" leftItemsSupplementBackButton="YES" id="icY-f1-6bX" colorLabel="IBBuiltInLabel-Yellow"/>
                     <connections>
                         <segue destination="EXj-lC-DKX" kind="show" identifier="VCNegro" id="eOb-F3-sqK"/>
-                        <segue destination="aga-Py-dg5" kind="show" identifier="VCRosa" id="Fvy-3G-wfi"/>
-                        <segue destination="DGj-ht-lTx" kind="show" identifier="VCVerde" id="9rS-sX-9JI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -71,6 +69,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="hNe-bC-fib"/>
                         <color key="backgroundColor" systemColor="viewFlipsideBackgroundColor"/>
+                        <color key="tintColor" systemColor="tintColor"/>
                         <accessibility key="accessibilityConfiguration">
                             <accessibilityTraits key="traits" button="YES"/>
                             <bool key="isElement" value="YES"/>
@@ -81,46 +80,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kb1-sU-idt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-17" y="-557"/>
-        </scene>
-        <!--View Controller Rosa-->
-        <scene sceneID="aoK-Qy-fUD">
-            <objects>
-                <viewController id="aga-Py-dg5" customClass="ViewControllerRosa" customModule="Navegacion" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" userInteractionEnabled="NO" contentMode="scaleToFill" id="Rga-2r-VU6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="37o-nF-5QE"/>
-                        <color key="backgroundColor" systemColor="systemPinkColor"/>
-                        <accessibility key="accessibilityConfiguration">
-                            <accessibilityTraits key="traits" button="YES"/>
-                            <bool key="isElement" value="YES"/>
-                        </accessibility>
-                    </view>
-                    <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="ImG-zb-SpN"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gbT-Ki-PE7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-17" y="81"/>
-        </scene>
-        <!--View Controller Verde-->
-        <scene sceneID="i5N-Oq-QzR">
-            <objects>
-                <viewController id="DGj-ht-lTx" customClass="ViewControllerVerde" customModule="Navegacion" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" userInteractionEnabled="NO" contentMode="scaleToFill" id="Xy1-HB-8Kz">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="lg6-EQ-vbN"/>
-                        <color key="backgroundColor" systemColor="systemMintColor"/>
-                        <accessibility key="accessibilityConfiguration">
-                            <accessibilityTraits key="traits" button="YES"/>
-                            <bool key="isElement" value="YES"/>
-                        </accessibility>
-                    </view>
-                    <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="pdB-RN-2cD"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CmS-SA-krE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-17" y="727"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="syb-HH-oX9">
@@ -142,17 +101,14 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemMintColor">
-            <color red="0.0" green="0.78039215689999997" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.18823529410000001" green="0.69019607839999997" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tableBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="viewFlipsideBackgroundColor">
             <color red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
