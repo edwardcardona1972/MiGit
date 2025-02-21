@@ -30,7 +30,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		A0F80C8E2D67992000441EDD /* Exceptions for "AdvancedAutoLayout" folder in "AdvancedAutoLayout" target */ = {
+		A0C0A0D32D689383004DE9DF /* Exceptions for "AdvancedAutoLayout" folder in "AdvancedAutoLayout" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -40,10 +40,10 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		A0F80C682D67991E00441EDD /* AdvancedAutoLayout */ = {
+		A0C0A0CB2D689383004DE9DF /* AdvancedAutoLayout */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				A0F80C8E2D67992000441EDD /* Exceptions for "AdvancedAutoLayout" folder in "AdvancedAutoLayout" target */,
+				A0C0A0D32D689383004DE9DF /* Exceptions for "AdvancedAutoLayout" folder in "AdvancedAutoLayout" target */,
 			);
 			path = AdvancedAutoLayout;
 			sourceTree = "<group>";
@@ -88,7 +88,7 @@
 		A0F80C5D2D67991E00441EDD = {
 			isa = PBXGroup;
 			children = (
-				A0F80C682D67991E00441EDD /* AdvancedAutoLayout */,
+				A0C0A0CB2D689383004DE9DF /* AdvancedAutoLayout */,
 				A0F80C7F2D67992000441EDD /* AdvancedAutoLayoutTests */,
 				A0F80C892D67992000441EDD /* AdvancedAutoLayoutUITests */,
 				A0F80C672D67991E00441EDD /* Products */,
@@ -121,7 +121,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				A0F80C682D67991E00441EDD /* AdvancedAutoLayout */,
+				A0C0A0CB2D689383004DE9DF /* AdvancedAutoLayout */,
 			);
 			name = AdvancedAutoLayout;
 			packageProductDependencies = (

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uOx-7G-eMn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
@@ -16,15 +16,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="S7M-82-VcT">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="S7M-82-VcT">
                                 <rect key="frame" x="16" y="108" width="382" height="738"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GL1-bS-niB">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="738"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="184.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Constraints de posición"/>
                                         <connections>
                                             <segue destination="mf3-cj-bHF" kind="show" id="BQK-i2-uS7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AGm-u1-zI3">
+                                        <rect key="frame" x="0.0" y="184.5" width="382" height="184.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Constraints de altura y anchura"/>
+                                        <connections>
+                                            <segue destination="KyZ-ku-PVU" kind="show" id="HEO-2F-EhU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uc3-RQ-hGl">
+                                        <rect key="frame" x="0.0" y="369" width="382" height="184.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Modificar contraints por codigo"/>
+                                        <connections>
+                                            <segue destination="Ikp-gJ-Ohn" kind="show" id="H3Z-bo-T0o"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ka4-Ff-Cke">
+                                        <rect key="frame" x="0.0" y="553.5" width="382" height="184.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Crear constraints por codigo"/>
+                                        <connections>
+                                            <segue destination="t4e-p5-OWd" kind="show" id="I1F-zj-qam"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -43,7 +67,33 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="545" y="17"/>
+            <point key="canvasLocation" x="-270" y="767"/>
+        </scene>
+        <!--Crear Constraints por codigo-->
+        <scene sceneID="8qL-or-OAM">
+            <objects>
+                <viewController title="Crear Constraints por codigo" id="t4e-p5-OWd" customClass="CrearConstraintsViewController" customModule="AdvancedAutoLayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vZK-Jw-mTJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SEm-ss-uD5">
+                                <rect key="frame" x="87" y="300" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ic3-v6-h8I"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Crear constraints por codigo" id="TLL-Ai-fUc"/>
+                    <connections>
+                        <outlet property="yellowView" destination="SEm-ss-uD5" id="Ucs-6V-Ayi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UZh-35-Gh9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="838" y="780"/>
         </scene>
         <!--Constraints de Posición-->
         <scene sceneID="LdY-uF-BcO">
@@ -91,7 +141,71 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="biP-FS-hTL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1244.9275362318842" y="27.455357142857142"/>
+            <point key="canvasLocation" x="267" y="111"/>
+        </scene>
+        <!--contrainsts de altura y anchura-->
+        <scene sceneID="4E3-1b-7dk">
+            <objects>
+                <viewController title="contrainsts de altura y anchura" id="KyZ-ku-PVU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qwh-Ne-bpj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BlD-P0-0ar">
+                                <rect key="frame" x="32" y="124" width="200" height="300"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="2Sq-I7-Q99"/>
+                                    <constraint firstAttribute="height" constant="300" id="CwP-x2-yaw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QdD-zC-EIF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BlD-P0-0ar" firstAttribute="top" secondItem="QdD-zC-EIF" secondAttribute="top" constant="32" id="g5c-SN-WAX"/>
+                            <constraint firstItem="BlD-P0-0ar" firstAttribute="leading" secondItem="QdD-zC-EIF" secondAttribute="leading" constant="32" id="m9o-eb-0kp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Constraints de altura y anchura" id="4N1-7c-xkJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a6a-Cv-F2H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="903" y="110"/>
+        </scene>
+        <!--Modificador constraints por codigo-->
+        <scene sceneID="077-OH-XIk">
+            <objects>
+                <viewController title="Modificador constraints por codigo" id="Ikp-gJ-Ohn" customClass="ModifyConstraintsViewController" customModule="AdvancedAutoLayout" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qIN-GX-L6U">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2KA-FB-IsM">
+                                <rect key="frame" x="16" y="108" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Chq-qC-pZX"/>
+                                    <constraint firstAttribute="width" constant="100" id="Rj2-m0-rja"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="W7w-PP-GDw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2KA-FB-IsM" firstAttribute="top" secondItem="W7w-PP-GDw" secondAttribute="top" constant="16" id="Apz-nS-flt"/>
+                            <constraint firstItem="2KA-FB-IsM" firstAttribute="leading" secondItem="W7w-PP-GDw" secondAttribute="leading" constant="16" id="pgC-sY-92m"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Modificar constrtaints por codigo" id="uw6-co-2Il"/>
+                    <connections>
+                        <outlet property="heightConstraints" destination="Chq-qC-pZX" id="S9w-6f-46l"/>
+                        <outlet property="topConstraints" destination="Apz-nS-flt" id="U4y-Jz-eLv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vX5-3f-H3h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1541" y="110"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dbh-zY-1UN">
@@ -107,7 +221,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7V9-gG-oMP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-167" y="17"/>
+            <point key="canvasLocation" x="-954" y="768"/>
         </scene>
     </scenes>
     <resources>
@@ -122,6 +236,15 @@
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
