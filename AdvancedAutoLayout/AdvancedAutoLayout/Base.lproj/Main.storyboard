@@ -20,7 +20,7 @@
                                 <rect key="frame" x="16" y="108" width="382" height="738"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GL1-bS-niB">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="184.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="147.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Constraints de posición"/>
                                         <connections>
@@ -28,7 +28,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AGm-u1-zI3">
-                                        <rect key="frame" x="0.0" y="184.5" width="382" height="184.5"/>
+                                        <rect key="frame" x="0.0" y="147.5" width="382" height="147.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Constraints de altura y anchura"/>
                                         <connections>
@@ -36,7 +36,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uc3-RQ-hGl">
-                                        <rect key="frame" x="0.0" y="369" width="382" height="184.5"/>
+                                        <rect key="frame" x="0.0" y="295" width="382" height="148"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Modificar contraints por codigo"/>
                                         <connections>
@@ -44,11 +44,19 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ka4-Ff-Cke">
-                                        <rect key="frame" x="0.0" y="553.5" width="382" height="184.5"/>
+                                        <rect key="frame" x="0.0" y="443" width="382" height="147.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Crear constraints por codigo"/>
                                         <connections>
                                             <segue destination="t4e-p5-OWd" kind="show" id="I1F-zj-qam"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uc3-5l-ZTn">
+                                        <rect key="frame" x="0.0" y="590.5" width="382" height="147.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Constreints de igualdad entre elementos"/>
+                                        <connections>
+                                            <segue destination="O7U-cs-dr8" kind="show" id="Bfy-Ws-x1B"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -68,6 +76,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-270" y="767"/>
+        </scene>
+        <!--Cosntreints de igualdad entre elementos-->
+        <scene sceneID="tas-Op-PKV">
+            <objects>
+                <viewController title="Cosntreints de igualdad entre elementos" id="O7U-cs-dr8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HJE-TZ-BUP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TW6-2g-2tA">
+                                <rect key="frame" x="16" y="108" width="300" height="250"/>
+                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="FxZ-TN-Jw7"/>
+                                    <constraint firstAttribute="width" constant="300" id="TeP-Tm-YDa"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HWc-bw-zVJ">
+                                <rect key="frame" x="98" y="596" width="300" height="250"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lGr-3s-a04">
+                                <rect key="frame" x="16" y="384" width="300" height="128"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gGX-Tv-aOs"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lGr-3s-a04" firstAttribute="leading" secondItem="gGX-Tv-aOs" secondAttribute="leading" constant="16" id="2E0-3Y-qxn"/>
+                            <constraint firstItem="HWc-bw-zVJ" firstAttribute="height" secondItem="TW6-2g-2tA" secondAttribute="height" id="4kM-aJ-Glf"/>
+                            <constraint firstItem="gGX-Tv-aOs" firstAttribute="bottom" secondItem="HWc-bw-zVJ" secondAttribute="bottom" constant="16" id="9nW-2z-Uzx"/>
+                            <constraint firstItem="HWc-bw-zVJ" firstAttribute="width" secondItem="TW6-2g-2tA" secondAttribute="width" id="HPg-Na-l9z"/>
+                            <constraint firstItem="lGr-3s-a04" firstAttribute="width" secondItem="TW6-2g-2tA" secondAttribute="width" id="HyW-lC-VaM"/>
+                            <constraint firstItem="TW6-2g-2tA" firstAttribute="leading" secondItem="gGX-Tv-aOs" secondAttribute="leading" constant="16" id="Nc7-3L-BsP"/>
+                            <constraint firstItem="lGr-3s-a04" firstAttribute="top" secondItem="TW6-2g-2tA" secondAttribute="bottom" constant="16" id="don-ki-27w"/>
+                            <constraint firstItem="gGX-Tv-aOs" firstAttribute="trailing" secondItem="HWc-bw-zVJ" secondAttribute="trailing" constant="16" id="hQl-sp-SWZ"/>
+                            <constraint firstItem="TW6-2g-2tA" firstAttribute="top" secondItem="gGX-Tv-aOs" secondAttribute="top" constant="16" id="oF3-Hz-m4v"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Constraints de igualdad entre elementos" id="xST-q5-12p"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w1q-Wc-6bI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="726" y="844"/>
         </scene>
         <!--Crear Constraints por codigo-->
         <scene sceneID="8qL-or-OAM">
@@ -93,7 +146,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UZh-35-Gh9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="838" y="780"/>
+            <point key="canvasLocation" x="2183" y="110"/>
         </scene>
         <!--Constraints de Posición-->
         <scene sceneID="LdY-uF-BcO">
@@ -231,6 +284,9 @@
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
+        <systemColor name="systemCyanColor">
+            <color red="0.1960784314" green="0.67843137249999996" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
@@ -242,6 +298,9 @@
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529410000001" green="0.69019607839999997" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
