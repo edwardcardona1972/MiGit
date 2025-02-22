@@ -29,9 +29,22 @@
 		A0A632792D65EE4A0063A690 /* FabricaDeAutomovilesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FabricaDeAutomovilesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		A0A632812D65EE4A0063A690 /* Exceptions for "FabricaDeAutomoviles" folder in "FabricaDeAutomoviles" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = A0A632582D65EE490063A690 /* FabricaDeAutomoviles */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		A0A6325B2D65EE490063A690 /* FabricaDeAutomoviles */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A0A632812D65EE4A0063A690 /* Exceptions for "FabricaDeAutomoviles" folder in "FabricaDeAutomoviles" target */,
+			);
 			path = FabricaDeAutomoviles;
 			sourceTree = "<group>";
 		};
