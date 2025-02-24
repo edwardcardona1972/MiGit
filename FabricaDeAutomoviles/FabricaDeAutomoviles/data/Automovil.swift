@@ -6,12 +6,19 @@
 //
 
 import Foundation
-class Automovil{
+ class Automovil{
     
-    var color = "Azul"
-    var numeroDeLlantas = 4
-    var precio = 5000
-    var tipoAutomovil: TipoDeAutomovil = .normal
+    var color: String
+    let numeroDeLlantas: Int
+    var precio: Int
+    let tipoAutomovil: TipoDeAutomovil
+    
+    init(color: String, numeroDeLlantas: Int, precio: Int, tipoAutomovil: TipoDeAutomovil = .normal) {
+        self.color = color
+        self.numeroDeLlantas = numeroDeLlantas
+        self.precio = precio
+        self.tipoAutomovil = tipoAutomovil
+    }
     
     func encender() -> Bool{
         return true
@@ -25,9 +32,4 @@ class Automovil{
         return "Aceleración exitosa"
     }
     
-}
-
-enum TipoDeAutomovil: String{
-    case normal
-    case electrico
 }

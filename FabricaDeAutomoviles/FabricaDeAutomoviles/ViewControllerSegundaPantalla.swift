@@ -13,7 +13,7 @@ class ViewControllerSegundaPantalla: UIViewController {
     @IBOutlet weak var imagenView: UIImageView!
     @IBOutlet weak var label: UILabel!
     
-    var tipoAutomovil:Int?
+    var tipoAutomovil: TipoDeAutomovil!
     var automovilNormal:Automovil?
     var autoElectrico:AutomovilElectrico?
     var estadoAutomovil = false
@@ -23,23 +23,18 @@ class ViewControllerSegundaPantalla: UIViewController {
         super.viewDidLoad()
         
         switch tipoAutomovil! {
-        case 0:
-            automovilNormal = Automovil()
+        case .normal:
+            automovilNormal = Automovil(color: "Azul", numeroDeLlantas: 4, precio: 50000)
             imagenView.image = UIImage(named: "automovil")
             label.text = "Se creo el automovil correctamente"
             
             
-        case 1:
-            autoElectrico = AutomovilElectrico()
+        case .electrico:
+            autoElectrico = AutomovilElectrico(color: "Azul", numeroDeLlantas: 4, precio: 55000)
             imagenView.image = UIImage(named: "autoelectrico")
             autoElectrico!.color = "Azul"
             autoElectrico!.precio = 10000
             label.text = "Se creo el atimovil eléctrico correctamente"
-            
-            
-        default:
-            print("Error")
-            
         }
     }
     
@@ -47,28 +42,25 @@ class ViewControllerSegundaPantalla: UIViewController {
     @IBAction func mostrarInformacion(_ sender: Any) {
         
         switch tipoAutomovil! {
-        case 0:
+        case .normal:
             label.text = """
                         El automovil tiene 
                         \(automovilNormal!.numeroDeLlantas) llantas, es de color \(automovilNormal!.color), su precio es de \(automovilNormal!.precio) Euros 
                         """
             
-        case 1:
+        case .electrico:
             label.text = """
                         El automovil tinen
                         \(autoElectrico!.numeroDeLlantas) llantas, es de color \(autoElectrico!.color), su precio es de \(autoElectrico!.precio) Euros, \
                          su carga esta al \(autoElectrico!.porcentajeBatería) de bateria 
                        """
-            
-        default:
-            print("Error")
         }
     }
     
     @IBAction func encender(_ sender: Any) {
         
         switch tipoAutomovil! {
-        case 0:
+        case .normal:
             if (estadoAutomovil){
                 estadoAutomovil = automovilNormal!.encender()
                 label.text = "El automovil se encendio correctamente"
@@ -76,7 +68,7 @@ class ViewControllerSegundaPantalla: UIViewController {
                 label.text = "El automovil ya esta encendido"
             }
             
-        case 1:
+        case .electrico:
             if (estadoAutomovil){
                 estadoAutomovil = autoElectrico!.encender()
                 label.text = "El automovil electrico se encendio correctamente"
@@ -84,15 +76,12 @@ class ViewControllerSegundaPantalla: UIViewController {
             }else {
                 label.text = "El automovil electrico ya esta encendido"
             }
-            
-        default:
-            print("Error")
         }
     }
     
     @IBAction func apagar(_ sender: Any) {
         switch tipoAutomovil! {
-        case 0:
+        case .normal:
             if (estadoAutomovil){
                 estadoAutomovil = automovilNormal!.apagar()
                 label.text = "El automovil se apagó correctamente"
@@ -100,7 +89,7 @@ class ViewControllerSegundaPantalla: UIViewController {
                 label.text = "El automovil ya esta apagado"
             }
             
-        case 1:
+        case .electrico:
             if (estadoAutomovil){
                 estadoAutomovil = autoElectrico!.apagar()
                 label.text = "El automovil electrico se apagó correctamente"
@@ -108,32 +97,26 @@ class ViewControllerSegundaPantalla: UIViewController {
             }else {
                 label.text = "El automovil electrico ya esta apagado"
             }
-            
-        default:
-            print("Error")
         }
         
     }
     
     @IBAction func acelerar(_ sender: Any) {
         switch tipoAutomovil! {
-            case 0:
+        case .normal:
             if (estadoAutomovil){
                 label.text = automovilNormal!.acelerar()
             }else {
                 label.text = "El automovil tiene que estar ecnendido para acelerarlo"
             }
             
-        case 1:
+        case .electrico:
             if (estadoAutomovil){
                 label.text = autoElectrico!.acelerar()
                 autoElectrico!.porcentajeBatería = autoElectrico!.porcentajeBatería - 5
             }else {
                 label.text = "El automovil elecricto tiene que estar ecnendido para acelerarlo"
             }
-                        
-        default:
-            print("Error")
         }
     }
 }
