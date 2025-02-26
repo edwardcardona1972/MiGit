@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyFirstApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello Hackermen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aq7-zZ-Fqm">
+                                <rect key="frame" x="20" y="259" width="353" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="YN0-De-x1l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to EduardCG" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pq3-ih-c8x">
+                                <rect key="frame" x="20" y="319" width="353" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ZxX-3f-8vC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WaO-nK-ad2">
+                                <rect key="frame" x="50" y="399" width="293" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="e7b-yg-iI7"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="NAVIGATE"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oIO-El-60l">
+                                <rect key="frame" x="168" y="449" width="57" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="GET"/>
+                                <connections>
+                                    <action selector="getButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8sG-tA-QXv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="48j-kJ-1B3">
+                                <rect key="frame" x="168" y="504" width="57" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="PUT"/>
+                                <connections>
+                                    <action selector="putButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hRd-M9-ABj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1FQ-Fo-lQT">
+                                <rect key="frame" x="154" y="559" width="85" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="DELETE"/>
+                                <connections>
+                                    <action selector="deleteButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3cW-QR-Nz5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Pq3-ih-c8x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2aI-fY-mFF"/>
+                            <constraint firstItem="Pq3-ih-c8x" firstAttribute="top" secondItem="Aq7-zZ-Fqm" secondAttribute="bottom" constant="20" id="54u-bX-f9B"/>
+                            <constraint firstItem="Aq7-zZ-Fqm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="6dq-nn-8Ke"/>
+                            <constraint firstItem="Aq7-zZ-Fqm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="7pJ-Ro-cYF"/>
+                            <constraint firstItem="Pq3-ih-c8x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Ib-oD-UNQ"/>
+                            <constraint firstItem="oIO-El-60l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FWr-Bv-RSi"/>
+                            <constraint firstItem="WaO-nK-ad2" firstAttribute="top" secondItem="Pq3-ih-c8x" secondAttribute="bottom" constant="50" id="I5I-jJ-8VY"/>
+                            <constraint firstItem="oIO-El-60l" firstAttribute="top" secondItem="WaO-nK-ad2" secondAttribute="bottom" constant="20" id="IGf-ml-hEg"/>
+                            <constraint firstItem="WaO-nK-ad2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Laz-bE-AtB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Aq7-zZ-Fqm" secondAttribute="trailing" constant="20" id="S18-Nz-nYf"/>
+                            <constraint firstItem="48j-kJ-1B3" firstAttribute="top" secondItem="oIO-El-60l" secondAttribute="bottom" constant="20" id="dvL-yZ-uor"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Pq3-ih-c8x" secondAttribute="trailing" constant="20" id="fJY-XQ-bXl"/>
+                            <constraint firstItem="WaO-nK-ad2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g20-wx-1ie"/>
+                            <constraint firstItem="1FQ-Fo-lQT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hQ4-pS-1lv"/>
+                            <constraint firstItem="1FQ-Fo-lQT" firstAttribute="top" secondItem="48j-kJ-1B3" secondAttribute="bottom" constant="20" id="ixY-9Q-n5p"/>
+                            <constraint firstItem="48j-kJ-1B3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="k1W-9V-AzV"/>
+                            <constraint firstItem="Aq7-zZ-Fqm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lmA-H2-6W4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WaO-nK-ad2" secondAttribute="trailing" constant="50" id="rXA-5h-ZBE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="HelloLAbel" destination="Aq7-zZ-Fqm" id="FfS-WF-R3h"/>
+                        <outlet property="welcomeLabel" destination="Pq3-ih-c8x" id="Q29-rX-uAu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="82" y="5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
