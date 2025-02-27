@@ -6,6 +6,9 @@
 //
 
 import UIKit
+private let orange = UIColor(red: 255/255, green: 149/255, blue: 0/255, alpha: 1)
+    
+
 
 extension UIButton {
     
@@ -25,4 +28,9 @@ extension UIButton {
                 })
             }
         }
+    //Aparienciaselección boton de operación
+    func selectedOperation(_ selected: Bool) {
+        backgroundColor = selected ? .white : .orange
+        setTitleColor(selected ? orange : .white, for: .normal)
+    }
 }
