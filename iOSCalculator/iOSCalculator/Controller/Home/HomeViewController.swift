@@ -38,6 +38,49 @@ final class HomeViewController: UIViewController {
     @IBOutlet weak var operatorDivision: UIButton!
     
     
+    //MARK: - Variables
+    
+    private var total: Double = 0                   //Total
+    private var temp: Double = 0                    //Valor por pantalla
+    private var operating = false                   //Indicar si se ha selecionado un operador
+    private var decimal = false                     //Indicar si el valor es decimal
+    private var operation: OperationType = .none    //Operación actual
+    
+    
+    // MARK: - Constantes
+    
+    private let KDecimalSepatator = Locale.current.decimalSeparator!
+    private let KMaxLength = 9
+    private let KMaxValue: Double = 999999999999
+    private let KMinValue: Double = 0.00000001
+        
+    private enum OperationType   {
+        case none, addition, substraction, multiplication, division, percent
+    }
+    
+    //Formateo de valores auxiliar
+    private let auxFormatter: NumberFormatter = {
+        let formatter = NumberFormatter()
+        let locale = Locale.current
+        formatter.groupingSeparator = ""
+        formatter.decimalSeparator = locale.decimalSeparator
+        formatter.numberStyle = .decimal
+        return formatter
+        
+    }()
+    
+    //Formateo de valores por pantalla por defecto
+    private let printFormatter: NumberFormatter = {
+        let formatter = NumberFormatter()
+        let locale = Locale.current
+        formatter.groupingSeparator = locale.groupingSeparator
+        formatter.decimalSeparator = locale.decimalSeparator
+        formatter.numberStyle = .decimal
+        formatter.maximumIntegerDigits = 9
+        formatter.minimumFractionDigits = 0
+        formatter.maximumFractionDigits = 8
+        return formatter
+    }()
     
     // MARK: - Initialización
     
@@ -80,6 +123,9 @@ final class HomeViewController: UIViewController {
         operatorDivision.round()
         numberDecimal.round()
         
+        numberDecimal.setTitle(KDecimalSepatator, for: .normal)
+        
+        result()
 
     }
 
@@ -126,4 +172,53 @@ final class HomeViewController: UIViewController {
         print(sender.tag)
     }
     
+    // Limpia los valores
+    private func Clear() {
+        operation = .none
+        operatorAc.setTitle("Ac", for: .normal)
+        if temp ≠ 0{
+            temp = 0
+            resultLabel.text = "0"
+        }else {
+            total = 0
+            
+        }
+    }
+    
+    //Obtiene el resultado final
+    private func result() {
+        switch operation {
+        case .none:
+            // No hacemos nada
+            break
+        case .addition:
+           total = total + temp
+            break
+        case .substraction:
+            total = total - temp
+            break
+        case .multiplication:
+            total = total * temp
+            break
+        case .division:
+            total = total / temp
+            break
+        case .percent:
+            temp = temp / 100
+            total  = temp
+            break
+            
+          
+        }
+        // Formateo por pantalla
+        if total ≤ KMaxValue || total ≥ KMinValue{
+            resultLabel.text = printFormatter.string(from: NSNumber(value: total))
+            
+        }
+        print("Total \(total)")
+        
+    }
+    
 }
+
+
