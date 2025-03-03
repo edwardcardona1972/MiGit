@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elL-MV-5i5">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elL-MV-5i5">
                                 <rect key="frame" x="16" y="75" width="361" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Get User"/>
@@ -24,15 +24,82 @@
                                     <action selector="getUserAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tcc-5B-mN5"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="6nj-EL-oj4">
+                                <rect key="frame" x="178" y="407.66666666666669" width="37" height="37"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6KW-oe-ywI">
+                                <rect key="frame" x="16" y="126" width="361" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VoG-1k-jFa">
+                                <rect key="frame" x="16" y="163" width="361" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c5m-6j-bhk">
+                                <rect key="frame" x="16" y="200" width="361" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fiy-QE-pb1">
+                                <rect key="frame" x="147" y="289.66666666666669" width="99" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Post User"/>
+                                <connections>
+                                    <action selector="addUserAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TUP-c0-mo7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V90-gN-aPw">
+                                <rect key="frame" x="16" y="340.66666666666669" width="361" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Put User"/>
+                                <connections>
+                                    <action selector="updateUserAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hMu-cI-XAr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="elL-MV-5i5" secondAttribute="trailing" constant="16" id="2cU-1S-7sm"/>
+                            <constraint firstItem="6nj-EL-oj4" firstAttribute="top" secondItem="V90-gN-aPw" secondAttribute="bottom" constant="31.670000000000002" id="4C9-Ps-hRi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6nj-EL-oj4" secondAttribute="trailing" constant="178" id="6vh-j8-PZp"/>
+                            <constraint firstItem="6nj-EL-oj4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="96F-N2-Xnl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c5m-6j-bhk" secondAttribute="trailing" constant="16" id="Aed-tL-y4V"/>
+                            <constraint firstItem="6KW-oe-ywI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Bjb-AK-c4u"/>
+                            <constraint firstItem="c5m-6j-bhk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="K6I-v4-59k"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6nj-EL-oj4" secondAttribute="trailing" constant="178" id="Ksb-kE-WdA"/>
+                            <constraint firstItem="V90-gN-aPw" firstAttribute="top" secondItem="Fiy-QE-pb1" secondAttribute="bottom" constant="16" id="L5Q-NB-tgc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6KW-oe-ywI" secondAttribute="trailing" constant="16" id="LcG-Gr-8Sh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VoG-1k-jFa" secondAttribute="trailing" constant="16" id="NhT-y6-3VI"/>
+                            <constraint firstItem="6nj-EL-oj4" firstAttribute="top" secondItem="V90-gN-aPw" secondAttribute="bottom" constant="32" id="OiV-6z-Kc5"/>
+                            <constraint firstItem="VoG-1k-jFa" firstAttribute="top" secondItem="6KW-oe-ywI" secondAttribute="bottom" constant="16" id="P1x-wT-E7o"/>
+                            <constraint firstItem="V90-gN-aPw" firstAttribute="top" secondItem="Fiy-QE-pb1" secondAttribute="bottom" constant="16" id="RcF-hF-aL1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fiy-QE-pb1" secondAttribute="trailing" constant="147" id="UX6-GK-xur"/>
                             <constraint firstItem="elL-MV-5i5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="YW8-k1-0vG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="V90-gN-aPw" secondAttribute="trailing" constant="16" id="ZHC-mE-mKX"/>
+                            <constraint firstItem="6nj-EL-oj4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZmX-uy-dTI"/>
                             <constraint firstItem="elL-MV-5i5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="ZqC-8g-yoq"/>
+                            <constraint firstItem="6KW-oe-ywI" firstAttribute="top" secondItem="elL-MV-5i5" secondAttribute="bottom" constant="16" id="Zxw-pO-M4S"/>
+                            <constraint firstItem="Fiy-QE-pb1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="147" id="aSB-5q-sPG"/>
+                            <constraint firstItem="6nj-EL-oj4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="178" id="hXG-Oa-WUL"/>
+                            <constraint firstItem="6nj-EL-oj4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="178" id="lmb-Lk-Yll"/>
+                            <constraint firstItem="c5m-6j-bhk" firstAttribute="top" secondItem="VoG-1k-jFa" secondAttribute="bottom" constant="16" id="n0P-IC-AAf"/>
+                            <constraint firstItem="V90-gN-aPw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="pB0-MI-XMK"/>
+                            <constraint firstItem="VoG-1k-jFa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="z5T-sY-cdr"/>
+                            <constraint firstItem="Fiy-QE-pb1" firstAttribute="top" secondItem="c5m-6j-bhk" secondAttribute="bottom" constant="68.670000000000002" id="zTy-Sx-6nd"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="6nj-EL-oj4" id="dkm-1n-EKX"/>
+                        <outlet property="emailLabel" destination="VoG-1k-jFa" id="MR5-ZH-924"/>
+                        <outlet property="idLabel" destination="c5m-6j-bhk" id="jQu-W7-qMc"/>
+                        <outlet property="nameLabel" destination="6KW-oe-ywI" id="Nnu-de-GXH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

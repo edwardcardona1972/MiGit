@@ -33,8 +33,18 @@ struct User: Decodable {
     let email: String?
     let gender: String?
     let status: String?
-    //let created_at: Date?
-    //let update_at: Date?
+    let created_at: Date?
+    let update_at: Date?
+    
+    enum CodingKeys: String, CodingKey {
+        case id
+        case name
+        case email
+        case gender
+        case status
+        case created_at = "created_at"
+        case update_at = "update_at"
+    }
     
 }
 struct Meta: Decodable {
