@@ -6,101 +6,116 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A0AB865E2D7457B700BEE9B2 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A0AB865D2D7457B700BEE9B2 /* Alamofire */; };
+		A0AB86602D7457B700BEE9B2 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = A0AB865F2D7457B700BEE9B2 /* AlamofireDynamic */; };
+		A0AB86692D74846500BEE9B2 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A0AB86682D74846500BEE9B2 /* Alamofire */; };
+		A0AB866B2D74846500BEE9B2 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = A0AB866A2D74846500BEE9B2 /* AlamofireDynamic */; };
+		A0AB866D2D74895400BEE9B2 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A0AB866C2D74895400BEE9B2 /* Alamofire */; };
+		A0AB866F2D74895400BEE9B2 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = A0AB866E2D74895400BEE9B2 /* AlamofireDynamic */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
-		A019CD6F2D70C72300D9148F /* PBXContainerItemProxy */ = {
+		A0AB863D2D744E9600BEE9B2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A019CD502D70C72100D9148F /* Project object */;
+			containerPortal = A0AB861B2D744E9400BEE9B2 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A019CD572D70C72100D9148F;
-			remoteInfo = MyFirstApp;
+			remoteGlobalIDString = A0AB86222D744E9400BEE9B2;
+			remoteInfo = Networking;
 		};
-		A019CD792D70C72300D9148F /* PBXContainerItemProxy */ = {
+		A0AB86472D744E9600BEE9B2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A019CD502D70C72100D9148F /* Project object */;
+			containerPortal = A0AB861B2D744E9400BEE9B2 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A019CD572D70C72100D9148F;
-			remoteInfo = MyFirstApp;
+			remoteGlobalIDString = A0AB86222D744E9400BEE9B2;
+			remoteInfo = Networking;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A019CD582D70C72100D9148F /* MyFirstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFirstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A019CD6E2D70C72300D9148F /* MyFirstAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFirstAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A019CD782D70C72300D9148F /* MyFirstAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFirstAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0AB86232D744E9400BEE9B2 /* Networking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Networking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0AB863C2D744E9600BEE9B2 /* NetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0AB86462D744E9600BEE9B2 /* NetworkingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		A019CD802D70C72300D9148F /* Exceptions for "MyFirstApp" folder in "MyFirstApp" target */ = {
+		A0AB864E2D744E9600BEE9B2 /* Exceptions for "Networking" folder in "Networking" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = A019CD572D70C72100D9148F /* MyFirstApp */;
+			target = A0AB86222D744E9400BEE9B2 /* Networking */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		A019CD5A2D70C72100D9148F /* MyFirstApp */ = {
+		A0AB86252D744E9400BEE9B2 /* Networking */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				A019CD802D70C72300D9148F /* Exceptions for "MyFirstApp" folder in "MyFirstApp" target */,
+				A0AB864E2D744E9600BEE9B2 /* Exceptions for "Networking" folder in "Networking" target */,
 			);
-			path = MyFirstApp;
+			path = Networking;
 			sourceTree = "<group>";
 		};
-		A019CD712D70C72300D9148F /* MyFirstAppTests */ = {
+		A0AB863F2D744E9600BEE9B2 /* NetworkingTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = MyFirstAppTests;
+			path = NetworkingTests;
 			sourceTree = "<group>";
 		};
-		A019CD7B2D70C72300D9148F /* MyFirstAppUITests */ = {
+		A0AB86492D744E9600BEE9B2 /* NetworkingUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = MyFirstAppUITests;
+			path = NetworkingUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A019CD552D70C72100D9148F /* Frameworks */ = {
+		A0AB86202D744E9400BEE9B2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0AB865E2D7457B700BEE9B2 /* Alamofire in Frameworks */,
+				A0AB86602D7457B700BEE9B2 /* AlamofireDynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A019CD6B2D70C72300D9148F /* Frameworks */ = {
+		A0AB86392D744E9600BEE9B2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0AB866D2D74895400BEE9B2 /* Alamofire in Frameworks */,
+				A0AB866F2D74895400BEE9B2 /* AlamofireDynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A019CD752D70C72300D9148F /* Frameworks */ = {
+		A0AB86432D744E9600BEE9B2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0AB86692D74846500BEE9B2 /* Alamofire in Frameworks */,
+				A0AB866B2D74846500BEE9B2 /* AlamofireDynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A019CD4F2D70C72100D9148F = {
+		A0AB861A2D744E9400BEE9B2 = {
 			isa = PBXGroup;
 			children = (
-				A019CD5A2D70C72100D9148F /* MyFirstApp */,
-				A019CD712D70C72300D9148F /* MyFirstAppTests */,
-				A019CD7B2D70C72300D9148F /* MyFirstAppUITests */,
-				A019CD592D70C72100D9148F /* Products */,
+				A0AB86252D744E9400BEE9B2 /* Networking */,
+				A0AB863F2D744E9600BEE9B2 /* NetworkingTests */,
+				A0AB86492D744E9600BEE9B2 /* NetworkingUITests */,
+				A0AB86242D744E9400BEE9B2 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A019CD592D70C72100D9148F /* Products */ = {
+		A0AB86242D744E9400BEE9B2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A019CD582D70C72100D9148F /* MyFirstApp.app */,
-				A019CD6E2D70C72300D9148F /* MyFirstAppTests.xctest */,
-				A019CD782D70C72300D9148F /* MyFirstAppUITests.xctest */,
+				A0AB86232D744E9400BEE9B2 /* Networking.app */,
+				A0AB863C2D744E9600BEE9B2 /* NetworkingTests.xctest */,
+				A0AB86462D744E9600BEE9B2 /* NetworkingUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,134 +123,143 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A019CD572D70C72100D9148F /* MyFirstApp */ = {
+		A0AB86222D744E9400BEE9B2 /* Networking */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A019CD812D70C72300D9148F /* Build configuration list for PBXNativeTarget "MyFirstApp" */;
+			buildConfigurationList = A0AB864F2D744E9600BEE9B2 /* Build configuration list for PBXNativeTarget "Networking" */;
 			buildPhases = (
-				A019CD542D70C72100D9148F /* Sources */,
-				A019CD552D70C72100D9148F /* Frameworks */,
-				A019CD562D70C72100D9148F /* Resources */,
+				A0AB861F2D744E9400BEE9B2 /* Sources */,
+				A0AB86202D744E9400BEE9B2 /* Frameworks */,
+				A0AB86212D744E9400BEE9B2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				A019CD5A2D70C72100D9148F /* MyFirstApp */,
+				A0AB86252D744E9400BEE9B2 /* Networking */,
 			);
-			name = MyFirstApp;
+			name = Networking;
 			packageProductDependencies = (
+				A0AB865D2D7457B700BEE9B2 /* Alamofire */,
+				A0AB865F2D7457B700BEE9B2 /* AlamofireDynamic */,
 			);
-			productName = MyFirstApp;
-			productReference = A019CD582D70C72100D9148F /* MyFirstApp.app */;
+			productName = Networking;
+			productReference = A0AB86232D744E9400BEE9B2 /* Networking.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A019CD6D2D70C72300D9148F /* MyFirstAppTests */ = {
+		A0AB863B2D744E9600BEE9B2 /* NetworkingTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A019CD862D70C72300D9148F /* Build configuration list for PBXNativeTarget "MyFirstAppTests" */;
+			buildConfigurationList = A0AB86542D744E9600BEE9B2 /* Build configuration list for PBXNativeTarget "NetworkingTests" */;
 			buildPhases = (
-				A019CD6A2D70C72300D9148F /* Sources */,
-				A019CD6B2D70C72300D9148F /* Frameworks */,
-				A019CD6C2D70C72300D9148F /* Resources */,
+				A0AB86382D744E9600BEE9B2 /* Sources */,
+				A0AB86392D744E9600BEE9B2 /* Frameworks */,
+				A0AB863A2D744E9600BEE9B2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A019CD702D70C72300D9148F /* PBXTargetDependency */,
+				A0AB863E2D744E9600BEE9B2 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				A019CD712D70C72300D9148F /* MyFirstAppTests */,
+				A0AB863F2D744E9600BEE9B2 /* NetworkingTests */,
 			);
-			name = MyFirstAppTests;
+			name = NetworkingTests;
 			packageProductDependencies = (
+				A0AB866C2D74895400BEE9B2 /* Alamofire */,
+				A0AB866E2D74895400BEE9B2 /* AlamofireDynamic */,
 			);
-			productName = MyFirstAppTests;
-			productReference = A019CD6E2D70C72300D9148F /* MyFirstAppTests.xctest */;
+			productName = NetworkingTests;
+			productReference = A0AB863C2D744E9600BEE9B2 /* NetworkingTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A019CD772D70C72300D9148F /* MyFirstAppUITests */ = {
+		A0AB86452D744E9600BEE9B2 /* NetworkingUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A019CD892D70C72300D9148F /* Build configuration list for PBXNativeTarget "MyFirstAppUITests" */;
+			buildConfigurationList = A0AB86572D744E9600BEE9B2 /* Build configuration list for PBXNativeTarget "NetworkingUITests" */;
 			buildPhases = (
-				A019CD742D70C72300D9148F /* Sources */,
-				A019CD752D70C72300D9148F /* Frameworks */,
-				A019CD762D70C72300D9148F /* Resources */,
+				A0AB86422D744E9600BEE9B2 /* Sources */,
+				A0AB86432D744E9600BEE9B2 /* Frameworks */,
+				A0AB86442D744E9600BEE9B2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A019CD7A2D70C72300D9148F /* PBXTargetDependency */,
+				A0AB86482D744E9600BEE9B2 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				A019CD7B2D70C72300D9148F /* MyFirstAppUITests */,
+				A0AB86492D744E9600BEE9B2 /* NetworkingUITests */,
 			);
-			name = MyFirstAppUITests;
+			name = NetworkingUITests;
 			packageProductDependencies = (
+				A0AB86682D74846500BEE9B2 /* Alamofire */,
+				A0AB866A2D74846500BEE9B2 /* AlamofireDynamic */,
 			);
-			productName = MyFirstAppUITests;
-			productReference = A019CD782D70C72300D9148F /* MyFirstAppUITests.xctest */;
+			productName = NetworkingUITests;
+			productReference = A0AB86462D744E9600BEE9B2 /* NetworkingUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A019CD502D70C72100D9148F /* Project object */ = {
+		A0AB861B2D744E9400BEE9B2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
-					A019CD572D70C72100D9148F = {
+					A0AB86222D744E9400BEE9B2 = {
 						CreatedOnToolsVersion = 16.2;
 					};
-					A019CD6D2D70C72300D9148F = {
+					A0AB863B2D744E9600BEE9B2 = {
 						CreatedOnToolsVersion = 16.2;
-						TestTargetID = A019CD572D70C72100D9148F;
+						TestTargetID = A0AB86222D744E9400BEE9B2;
 					};
-					A019CD772D70C72300D9148F = {
+					A0AB86452D744E9600BEE9B2 = {
 						CreatedOnToolsVersion = 16.2;
-						TestTargetID = A019CD572D70C72100D9148F;
+						TestTargetID = A0AB86222D744E9400BEE9B2;
 					};
 				};
 			};
-			buildConfigurationList = A019CD532D70C72100D9148F /* Build configuration list for PBXProject "MyFirstApp" */;
+			buildConfigurationList = A0AB861E2D744E9400BEE9B2 /* Build configuration list for PBXProject "Networking" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = A019CD4F2D70C72100D9148F;
+			mainGroup = A0AB861A2D744E9400BEE9B2;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A0AB865A2D74556B00BEE9B2 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = A019CD592D70C72100D9148F /* Products */;
+			productRefGroup = A0AB86242D744E9400BEE9B2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A019CD572D70C72100D9148F /* MyFirstApp */,
-				A019CD6D2D70C72300D9148F /* MyFirstAppTests */,
-				A019CD772D70C72300D9148F /* MyFirstAppUITests */,
+				A0AB86222D744E9400BEE9B2 /* Networking */,
+				A0AB863B2D744E9600BEE9B2 /* NetworkingTests */,
+				A0AB86452D744E9600BEE9B2 /* NetworkingUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A019CD562D70C72100D9148F /* Resources */ = {
+		A0AB86212D744E9400BEE9B2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A019CD6C2D70C72300D9148F /* Resources */ = {
+		A0AB863A2D744E9600BEE9B2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A019CD762D70C72300D9148F /* Resources */ = {
+		A0AB86442D744E9600BEE9B2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -245,21 +269,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A019CD542D70C72100D9148F /* Sources */ = {
+		A0AB861F2D744E9400BEE9B2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A019CD6A2D70C72300D9148F /* Sources */ = {
+		A0AB86382D744E9600BEE9B2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A019CD742D70C72300D9148F /* Sources */ = {
+		A0AB86422D744E9600BEE9B2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -269,20 +293,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A019CD702D70C72300D9148F /* PBXTargetDependency */ = {
+		A0AB863E2D744E9600BEE9B2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A019CD572D70C72100D9148F /* MyFirstApp */;
-			targetProxy = A019CD6F2D70C72300D9148F /* PBXContainerItemProxy */;
+			target = A0AB86222D744E9400BEE9B2 /* Networking */;
+			targetProxy = A0AB863D2D744E9600BEE9B2 /* PBXContainerItemProxy */;
 		};
-		A019CD7A2D70C72300D9148F /* PBXTargetDependency */ = {
+		A0AB86482D744E9600BEE9B2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A019CD572D70C72100D9148F /* MyFirstApp */;
-			targetProxy = A019CD792D70C72300D9148F /* PBXContainerItemProxy */;
+			target = A0AB86222D744E9400BEE9B2 /* Networking */;
+			targetProxy = A0AB86472D744E9600BEE9B2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		A019CD822D70C72300D9148F /* Debug */ = {
+		A0AB86502D744E9600BEE9B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -290,7 +314,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MyFirstApp/Info.plist;
+				INFOPLIST_FILE = Networking/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -301,7 +325,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = eduard.MyFirstApp;
+				PRODUCT_BUNDLE_IDENTIFIER = eduard.Networking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -309,7 +333,7 @@
 			};
 			name = Debug;
 		};
-		A019CD832D70C72300D9148F /* Release */ = {
+		A0AB86512D744E9600BEE9B2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -317,7 +341,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MyFirstApp/Info.plist;
+				INFOPLIST_FILE = Networking/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -328,7 +352,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = eduard.MyFirstApp;
+				PRODUCT_BUNDLE_IDENTIFIER = eduard.Networking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -336,7 +360,7 @@
 			};
 			name = Release;
 		};
-		A019CD842D70C72300D9148F /* Debug */ = {
+		A0AB86522D744E9600BEE9B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -399,7 +423,7 @@
 			};
 			name = Debug;
 		};
-		A019CD852D70C72300D9148F /* Release */ = {
+		A0AB86532D744E9600BEE9B2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -455,7 +479,7 @@
 			};
 			name = Release;
 		};
-		A019CD872D70C72300D9148F /* Debug */ = {
+		A0AB86552D744E9600BEE9B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -464,16 +488,16 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = eduard.MyFirstAppTests;
+				PRODUCT_BUNDLE_IDENTIFIER = eduard.NetworkingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyFirstApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MyFirstApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Networking.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Networking";
 			};
 			name = Debug;
 		};
-		A019CD882D70C72300D9148F /* Release */ = {
+		A0AB86562D744E9600BEE9B2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -482,87 +506,131 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = eduard.MyFirstAppTests;
+				PRODUCT_BUNDLE_IDENTIFIER = eduard.NetworkingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyFirstApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MyFirstApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Networking.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Networking";
 			};
 			name = Release;
 		};
-		A019CD8A2D70C72300D9148F /* Debug */ = {
+		A0AB86582D744E9600BEE9B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = eduard.MyFirstAppUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = eduard.NetworkingUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = MyFirstApp;
+				TEST_TARGET_NAME = Networking;
 			};
 			name = Debug;
 		};
-		A019CD8B2D70C72300D9148F /* Release */ = {
+		A0AB86592D744E9600BEE9B2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = eduard.MyFirstAppUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = eduard.NetworkingUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = MyFirstApp;
+				TEST_TARGET_NAME = Networking;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A019CD532D70C72100D9148F /* Build configuration list for PBXProject "MyFirstApp" */ = {
+		A0AB861E2D744E9400BEE9B2 /* Build configuration list for PBXProject "Networking" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A019CD842D70C72300D9148F /* Debug */,
-				A019CD852D70C72300D9148F /* Release */,
+				A0AB86522D744E9600BEE9B2 /* Debug */,
+				A0AB86532D744E9600BEE9B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A019CD812D70C72300D9148F /* Build configuration list for PBXNativeTarget "MyFirstApp" */ = {
+		A0AB864F2D744E9600BEE9B2 /* Build configuration list for PBXNativeTarget "Networking" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A019CD822D70C72300D9148F /* Debug */,
-				A019CD832D70C72300D9148F /* Release */,
+				A0AB86502D744E9600BEE9B2 /* Debug */,
+				A0AB86512D744E9600BEE9B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A019CD862D70C72300D9148F /* Build configuration list for PBXNativeTarget "MyFirstAppTests" */ = {
+		A0AB86542D744E9600BEE9B2 /* Build configuration list for PBXNativeTarget "NetworkingTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A019CD872D70C72300D9148F /* Debug */,
-				A019CD882D70C72300D9148F /* Release */,
+				A0AB86552D744E9600BEE9B2 /* Debug */,
+				A0AB86562D744E9600BEE9B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A019CD892D70C72300D9148F /* Build configuration list for PBXNativeTarget "MyFirstAppUITests" */ = {
+		A0AB86572D744E9600BEE9B2 /* Build configuration list for PBXNativeTarget "NetworkingUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A019CD8A2D70C72300D9148F /* Debug */,
-				A019CD8B2D70C72300D9148F /* Release */,
+				A0AB86582D744E9600BEE9B2 /* Debug */,
+				A0AB86592D744E9600BEE9B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A0AB865A2D74556B00BEE9B2 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A0AB865D2D7457B700BEE9B2 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A0AB865A2D74556B00BEE9B2 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		A0AB865F2D7457B700BEE9B2 /* AlamofireDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A0AB865A2D74556B00BEE9B2 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = AlamofireDynamic;
+		};
+		A0AB86682D74846500BEE9B2 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A0AB865A2D74556B00BEE9B2 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		A0AB866A2D74846500BEE9B2 /* AlamofireDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A0AB865A2D74556B00BEE9B2 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = AlamofireDynamic;
+		};
+		A0AB866C2D74895400BEE9B2 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A0AB865A2D74556B00BEE9B2 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		A0AB866E2D74895400BEE9B2 /* AlamofireDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A0AB865A2D74556B00BEE9B2 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = AlamofireDynamic;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = A019CD502D70C72100D9148F /* Project object */;
+	rootObject = A0AB861B2D744E9400BEE9B2 /* Project object */;
 }
