@@ -38,22 +38,9 @@
 		A0AB86462D744E9600BEE9B2 /* NetworkingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		A0AB864E2D744E9600BEE9B2 /* Exceptions for "Networking" folder in "Networking" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = A0AB86222D744E9400BEE9B2 /* Networking */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		A0AB86252D744E9400BEE9B2 /* Networking */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				A0AB864E2D744E9600BEE9B2 /* Exceptions for "Networking" folder in "Networking" target */,
-			);
 			path = Networking;
 			sourceTree = "<group>";
 		};
